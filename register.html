@@ -60,7 +60,7 @@
 <section>
   <h2>Rejestracja</h2>
 
-  <form class="register_form" action="register.html" method="post" autocomplete="on">
+  <form class="register_form" action="register.html" method="post" autocomplete="off">
 
     <label for="Imie">Imie</label><br>
     <input type="text" id="Imie" value="" autofocus> Text
@@ -71,22 +71,21 @@
     <br>
 
     <label for="month">Miesiąc</label> <br>
-    <input name=month list=months> Datalist
+    <input name=month id="month" list=months> Datalist
     <datalist id=months>
       <select name=month>
-       <option value="">
-       <option>styczeń
-       <option>lutys
-       <option>marzec
-       <option>kwiecień
-       <option>maj
-       <option>czerwiec
-       <option>lipiec
-       <option>sierpień
-       <option>wrzesień
-       <option>październik
-       <option>listopad
-       <option>grudzień
+       <option value="styczeń">styczeń</option>
+       <option value="luty">luty</option>
+       <option value="marzec">marzec</option>
+       <option value="kwiecień">kwiecień</option>
+       <option value="maj">maj</option>
+       <option value="czerwiec">czerwiec</option>
+       <option value="lipiec">lipiec</option>
+       <option value="sierpień">sierpień</option>
+       <option value="wrzesień">wrzesień</option>
+       <option value="październik">październik</option>
+       <option value="listopad">listopad</option>
+       <option value="grudzień">grudzień</option>
       </select>
     </datalist>
 <br>
@@ -107,7 +106,7 @@
     <br>
 
     <label for="tel">Telefon</label> <br>
-    <input type='tel' pattern='[0-9]{3} [0-9]{3} [0-9]{3}' title='### ### ###'> ### ### ###
+    <input type="text" id="tel" pattern='[0-9]{3} [0-9]{3} [0-9]{3}' title='### ### ###'> ### ### ###
 
     <br><br>
 
