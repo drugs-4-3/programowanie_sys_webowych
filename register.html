@@ -6,20 +6,91 @@
     <meta name="keywords" content="cat, cats, funny, kot, koty, kotki, smieszne">
     <meta name="author" content="Michał Ściubidło, Piotr Neumann">
     <title>Rejestracja</title>
+
+    <style>
+    nav ul {
+      list-style: none;
+      background-color: #444;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.2em;
+      line-height: 40px;
+      height: 40px;
+      border-bottom: 1px solid #888;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      display: block;
+      transition: .3s background-color;
+    }
+
+    nav a:hover {
+      background-color: #cccc33;
+    }
+
+    nav a.active {
+      background-color: #cccc33;
+      color: #444;
+      cursor: default;
+    }
+    nav li {
+
+    }
+    </style>
   </head>
 
   <body>
-	<a href="index.html">Strona główna</a>
-  <hr>
+    <nav>
+      <ul>
+        <li class="home"><a href="index.html">Strona główna</a></li>
+        <li class="register"><a class="active" href="register.html">Rejestracja</a></li>
+        <li class="blog"><a href="informations.html">Blog</a></li>
+      </ul>
+    </nav>
 
 
 <section>
   <h2>Rejestracja</h2>
 
-  <form class="register_form" action="register.html" method="post">
+  <form class="register_form" action="register.html" method="post" autocomplete="on">
 
+    <label for="Imie">Imie</label><br>
+    <input type="text" id="Imie" value="" autofocus> Text
+    <br>
+
+    <label for="nazwisko">Nazwisko</label><br>
+    <input type="text" id="nazwisko" value="" required> Text
+    <br>
+
+    <label for="month">Miesiąc</label> <br>
+    <input name=month id="month" list=months> Datalist
+    <datalist id=months>
+      <select name=month>
+       <option value="styczeń">styczeń</option>
+       <option value="luty">luty</option>
+       <option value="marzec">marzec</option>
+       <option value="kwiecień">kwiecień</option>
+       <option value="maj">maj</option>
+       <option value="czerwiec">czerwiec</option>
+       <option value="lipiec">lipiec</option>
+       <option value="sierpień">sierpień</option>
+       <option value="wrzesień">wrzesień</option>
+       <option value="październik">październik</option>
+       <option value="listopad">listopad</option>
+       <option value="grudzień">grudzień</option>
+      </select>
+    </datalist>
+<br>
     <label for="login">Login</label><br>
-    <input type="text" id="login" value="">
+    <input type="text" id="login" value="" autocomplete="on">
     <br>
 
     <label for="password">Hasło</label> <br>
@@ -31,7 +102,12 @@
     <br>
 
     <label for="email">Email</label> <br>
-    <input type="text" id="email" value="">
+    <input type="email" id="email" value="" required> Email
+    <br>
+
+    <label for="tel">Telefon</label> <br>
+    <input type="text" id="tel" pattern='[0-9]{3} [0-9]{3} [0-9]{3}' title='### ### ###'> ### ### ###
+
     <br><br>
 
     <input type="checkbox" id="rules" value="">
