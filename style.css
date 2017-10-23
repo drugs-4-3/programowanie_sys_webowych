@@ -1,0 +1,93 @@
+nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+nav a:hover {
+  background-color: #cccc33;
+}
+
+nav a.active {
+  background-color: #cccc33;
+  color: #444;
+  cursor: default;
+}
+nav li {
+}
+table.table1{
+  width: 70%;
+  border-collapse: collapse;
+  border: 1px solid black
+}
+
+table.table1 th{
+  text-align: center;S
+}
+
+table.table1 td{
+  border: 1px solid black
+}
+
+table.table2 {
+  width: 800px;
+  text-align: center;
+}
+
+#firstP {
+    font-size: 20px;
+}
+
+#secondP {
+    font-size: 2em;
+}
+#thirdP {
+    font-size: 20pt;
+}
+#fourthP {
+    font-size: 80%;
+}
+
+body#index {
+  background-color: #FFFFD2;
+  background-image: url("img/szeroki_kot.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: top;
+}
+
+body#register {
+  background-image: url("img/kotek.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+body#additional_info {
+  background: url("img/kotek.jpg") center no-repeat;
+
+
+}
+
+body#blog {
+  background-color: #FFFFD2;
+}
