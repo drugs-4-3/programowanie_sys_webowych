@@ -1,95 +1,42 @@
-  <!DOCTYPE html>
-  <html lang="pl">
-  <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="cat, cats, funny, kot, koty, kotki, smieszne">
-    <meta name="author" content="Michał Ściubidło, Piotr Neumann">
-    <title>Śmieszne kotki</title>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="cat, cats, funny, kot, koty, kotki, smieszne">
+  <meta name="author" content="Michał Ściubidło, Piotr Neumann">
+  <title>Śmieszne kotki</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
 
-    <style>
-    nav ul {
-      list-style: none;
-      background-color: #444;
-      text-align: center;
-      padding: 0;
-      margin: 0;
-    }
-    nav li {
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.2em;
-      line-height: 40px;
-      height: 40px;
-      border-bottom: 1px solid #888;
-      display: inline-block;
-      margin-right: 10px;
-    }
 
-    nav a {
-      text-decoration: none;
-      color: #fff;
-      display: block;
-      transition: .3s background-color;
-    }
+</head>
 
-    nav a:hover {
-      background-color: #cccc33;
-    }
 
-    nav a.active {
-      background-color: #cccc33;
-      color: #444;
-      cursor: default;
-    }
-    /* Option 1 - Display Inline */
-    nav li {
-
-    }
-    table.table1{
-      width: 70%;
-      border-collapse: collapse;
-      border: 1px solid black
-    }
-
-    table.table1 th{
-      text-align: center;
-    }
-
-    table.table1 td{
-      border: 1px solid black
-    }
-
-    table.table2 {
-      width: 800px;
-      text-align: center;
-    }
-    </style>
-
-  </head>
-  <body>
-
-    <nav>
-      <ul>
-        <li class="home"><a class="active" href="index.html">Strona główna</a></li>
-        <li class="register"><a href="register.html">Rejestracja</a></li>
-        <li class="blog"><a href="blog.html">Blog</a></li>
-      </ul>
-    </nav>
-    <h1>Witaj na stronie Śmieszne Kotki</h1>
-    <h4><em>&quot;Świat pełen jest zła, zimna i bólu. Na szczęście są śmieszne kotki&quot;</em> ~ nieznany pisarz</h4>
-    <hr>
+<body id="index">
+  <nav>
+    <ul>
+      <li class="home"><a class="active" href="index.html">Strona główna</a></li>
+      <li class="register"><a href="register.html">Rejestracja</a></li>
+      <li class="blog"><a href="blog.html">Blog</a></li>
+      <li class="więcej o sobie"><a href="additional_info.html">Więcej o sobie</a></li>
+      <li class="menuFont"><a href="menu.html">Menu Font</a></li>
+    </ul>
+  </nav>
+  <h1>Witaj na stronie Śmieszne Kotki</h1>
+  <h4><em>&quot;Świat pełen jest zła, zimna i bólu. Na szczęście są śmieszne kotki&quot;</em> ~ nieznany pisarz</h4>
+  <hr>
   <article>
     <h2>Słowem wstępu</h2>
-    <section>
+    <section class="to">
       <h2>Troche o nas</h2>
       <details>
         <summary>
-         <strong>O czym jest ta strona?</strong>
+          <strong>O czym jest ta strona?</strong>
         </summary>
         <p>Ta strona jest o śmiesznych <mark>kotkach</mark>. Nie ukrywajmy - wszyscy je kochamy.</p>
       </details>
       <details>
         <summary>
-         <strong>Dlaczego ją robimy?</strong>
+          <strong>Dlaczego ją robimy?</strong>
         </summary>
         <p>Ponieważ chcemy zaliczyć przedmiot Programowanie Systemów Webowych. No i 4fun oczywiście.</p>
       </details>
@@ -120,10 +67,10 @@
     </section>
   </article>
 
-    <hr>
+  <hr>
   <article>
     <h2>Lista śmiesznych kotów</h2>
-    <section>
+    <section class="to">
       <h2>Jest troche skromna, ale będzie się powiększać...</h2>
       <ol>
         <li>
@@ -144,7 +91,7 @@
     </section>
   </article>
 
-    <hr>
+  <hr>
   <article>
     <h2>Formularz</h2>
     <section>
@@ -178,9 +125,9 @@
 
     </section>
   </article>
-    <hr>
+  <hr>
   <article>
-      <h2><a id="2"></a>O Kocie</h2>
+    <h2><a id="2"></a>O Kocie</h2>
     <section>
       <table class="table1">
         <tr>
@@ -233,37 +180,37 @@
     </section>
   </article>
 
-    <hr>
+  <hr>
 
-    <div id="footer">
-      <table class="table2">
-        <tr>
-          <td>
-            <a href="https://www.youtube.com/watch?v=zcGOoDThC1E" target="blank">Film - Śmieszne koty 1</a>
-          </td>
-          <td>
-            <a href="https://www.youtube.com/watch?v=fxlobb4QaoI" target="blank">Film - Śmieszne koty 2</a>
-          </td>
-          <td>
-            <a href="https://www.youtube.com/watch?v=nGJ_-OpvolI" target="blank">Film - Śmieszne koty 3</a>
-          </td>
-          <td>
-            <a href="https://www.youtube.com/watch?v=sqQVLR5ifns" target="blank">Film - Śmieszne koty 4</a>
-          </td>
-          <td>
-            <a href="additional_info.html">Powiedz więcej o sobie</a>
-          </td>
-        </tr>
-        <tr>
-          <td colspan="4"><a href="mailto:jan_kowalski@example.pl">Wyślij wiadomość</a></td>
-        </tr>
-        <tr>
-          <td colspan="4">Śmieszne koty! &copy; Wszelkie prawa zastrzeżone</td>
-        </tr>
+  <div id="footer">
+    <table class="table2">
+      <tr>
+        <td>
+          <a href="https://www.youtube.com/watch?v=zcGOoDThC1E" target="blank">Film - Śmieszne koty 1</a>
+        </td>
+        <td>
+          <a href="https://www.youtube.com/watch?v=fxlobb4QaoI" target="blank">Film - Śmieszne koty 2</a>
+        </td>
+        <td>
+          <a href="https://www.youtube.com/watch?v=nGJ_-OpvolI" target="blank">Film - Śmieszne koty 3</a>
+        </td>
+        <td>
+          <a href="https://www.youtube.com/watch?v=sqQVLR5ifns" target="blank">Film - Śmieszne koty 4</a>
+        </td>
+        <td>
+          <a href="additional_info.html">Powiedz więcej o sobie</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="5"><a href="mailto:jan_kowalski@example.pl">Wyślij wiadomość</a></td>
+      </tr>
+      <tr>
+        <td colspan="5">Śmieszne koty! &copy; Wszelkie prawa zastrzeżone</td>
+      </tr>
 
-      </table>
-    </div>
+    </table>
+  </div>
 
 
-  </body>
-  </html>
+</body>
+</html>
