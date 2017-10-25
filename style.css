@@ -276,3 +276,14 @@ p.font2 {
 #menu_rozwijane > li > ul > li > ol > li > a:hover {
   color:#09C;
 }
+
+
+input[type="text"] {
+  background-color: green;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: black !important;
+  }
+}
