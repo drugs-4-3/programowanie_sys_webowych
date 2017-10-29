@@ -359,7 +359,7 @@ nav>ul {
   background-image: url("./img/kot-szok.jpg")
 }
 
-@@font-face {
+@font-face {
   font-family: myImportedFont;
   src: url('https://fonts.googleapis.com/css?family=Slabo+27px');
 }

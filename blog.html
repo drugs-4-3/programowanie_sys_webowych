@@ -4,45 +4,43 @@
 	<meta charset="UTF-8">
 	<title>Blog o kotkach</title>
 	<link rel="stylesheet" href="style.css" type="text/css">
+	<style>
+		nav ul {
+			list-style: none;
+			background-color: #444;
+			text-align: center;
+			padding: 0;
+			margin: 0;
+		}
+		nav li {
+			font-family: 'Oswald', sans-serif;
+			font-size: 1.2em;
+			line-height: 40px;
+			height: 40px;
+			border-bottom: 1px solid #888;
+			display: inline-block;
+			margin-right: 10px;
+		}
+
+	 nav a {
+			text-decoration: none;
+			color: #fff;
+			display: block;
+			transition: .3s background-color;
+		}
+
+		nav a:hover {
+			background-color: #cccc33;
+		}
+
+		nav a.active {
+			background-color: #cccc33;
+			color: #444;
+			cursor: default;
+		}
+	</style>
+
 </head>
-<body id="blog">
-
-	    <style>
-				nav ul {
-			    list-style: none;
-			    background-color: #444;
-			    text-align: center;
-			    padding: 0;
-			    margin: 0;
-			  }
-			  nav li {
-			    font-family: 'Oswald', sans-serif;
-			    font-size: 1.2em;
-			    line-height: 40px;
-			    height: 40px;
-			    border-bottom: 1px solid #888;
-			    display: inline-block;
-			    margin-right: 10px;
-			  }
-
-			 nav a {
-			    text-decoration: none;
-			    color: #fff;
-			    display: block;
-			    transition: .3s background-color;
-			  }
-
-			  nav a:hover {
-			    background-color: #cccc33;
-			  }
-
-			  nav a.active {
-			    background-color: #cccc33;
-			    color: #444;
-			    cursor: default;
-			  }
-	    </style>
-		</head>
 		<body>
 
 			<nav>
@@ -117,7 +115,6 @@
 					</p>
 				</details>
 			</footer>
-		</div>
-	</div>
+
 </body>
 </html>
