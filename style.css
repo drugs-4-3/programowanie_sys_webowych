@@ -40,7 +40,7 @@ table.table1{
 }
 
 table.table1 th{
-  text-align: center;S
+  text-align: center;
 }
 
 table.table1 td{
@@ -97,7 +97,7 @@ div.box_model1 {
   border: 25px solid green;
   padding: 25px;
   margin: 25px;
-  margin: 10;
+  margin: 10px;
   position: relative;
   float: right;
 }
@@ -109,7 +109,7 @@ div.box_model2 {
   border: 25px solid green;
   padding: 25px;
   margin: 25px;
-  margin: 10;
+  margin: 10px;
 
 }
 div.box_model3_fixed {
@@ -146,6 +146,10 @@ div.scrollable {
 
 div.container {
 
+}
+
+input:required {
+  border-color: red;
 }
 
 p.font1 {
