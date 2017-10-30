@@ -148,9 +148,6 @@ div.container {
 
 }
 
-input:required {
-  border-color: red;
-}
 
 p.font1 {
   font-family: "Times New Roman", Times, serif;
@@ -286,11 +283,11 @@ a:active {
 }
 
 input:disabled {
-  background: #aaaa;
+  background: #C6CECE;
 }
 
 input:enabled {
-  background: #dddd;
+  background: #DEB4CB;
 }
 
 
