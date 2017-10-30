@@ -7,23 +7,57 @@
 </head>
 <body id="blog">
 
-	<nav>
-		<ul>
-			<li class="home"><a href="index.html">Strona główna</a></li>
-			<li class="register"><a href="register.html">Rejestracja</a></li>
-			<li class="blog"><a class="active" href="blog.html">Blog</a></li>
-			<li class="Więcej o sobie"><a href="additional_info.html">Więcej o sobie</a></li>
-			<li class="menuFont"><a href="menu.html">Menu Font</a></li>
-		</ul>
-	</nav>
-	<div class="container">
-		<div class="scroll">
-			Blog o kotach
-		</div>
-		<div class="scrollable">
-			<article class="kocia kawiarnia">
-				<h1><mark>Kocia kawiarnia</mark> w Amsterdamie</h1>
-				<img src="img/kocia-kawiarnia-amsterdam.jpg" alt="Kocia kawiarnia" width="780" height="488">
+	    <style>
+				nav ul {
+			    list-style: none;
+			    background-color: #444;
+			    text-align: center;
+			    padding: 0;
+			    margin: 0;
+			  }
+			  nav li {
+			    font-family: 'Oswald', sans-serif;
+			    font-size: 1.2em;
+			    line-height: 40px;
+			    height: 40px;
+			    border-bottom: 1px solid #888;
+			    display: inline-block;
+			    margin-right: 10px;
+			  }
+
+			 nav a {
+			    text-decoration: none;
+			    color: #fff;
+			    display: block;
+			    transition: .3s background-color;
+			  }
+
+			  nav a:hover {
+			    background-color: #cccc33;
+			  }
+
+			  nav a.active {
+			    background-color: #cccc33;
+			    color: #444;
+			    cursor: default;
+			  }
+	    </style>
+		</head>
+		<body>
+
+			<nav>
+		    <ul>
+					<li class="home"><a href="index.html">Strona główna</a></li>
+	        <li class="register"><a href="register.html">Rejestracja</a></li>
+	        <li class="blog"><a class="active" href="blog.html">Blog</a></li>
+	        <li class="Więcej o sobie"><a href="additional_info.html">Więcej o sobie</a></li>
+	        <li class="menuFont"><a href="menu.html">Menu Font</a></li>
+		    </ul>
+		  </nav>
+
+		<article class="kocia kawiarnia">
+			<h1><mark>Kocia kawiarnia</mark> w Amsterdamie</h1>
+			<img src="img/kocia-kawiarnia-amsterdam.jpg" alt="Kocia kawiarnia" width="780" height="488">
 
 				<h3>Kattencafe Kopjes, czyli kocia kawiarnia</h3>
 				<p id="firstP"><mark>Kattencafe Kopjes</mark> leży w zachodniej dzielnicy Amsterdamu, 10 minut rowerem od Muzeum Van Gogha. Oczywiście najłatwiej, wzorem lokalsów, dotrzeć tu jednośladem. Kawiarenka jest mała i z zewnątrz niepozorna, może pomieścić do 20 gości. Okupuje ją – to chyba najlepsze określenie na zajęcia, jakim się oddają – siedem kotów. Została otwarta w 2015 roku w modelu crowdfundingowym – zrzuciło się na nią prawie tysiąc kociar i kociarzy.</p>
