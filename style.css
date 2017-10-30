@@ -148,9 +148,6 @@ div.container {
 
 }
 
-input:required {
-  border-color: red;
-}
 
 p.font1 {
   font-family: "Times New Roman", Times, serif;
@@ -281,15 +278,23 @@ p.font2 {
   color:#09C;
 }
 
-
-input[type="text"] {
-  background-color: green;
+a:active {
+  background-color: yellow;
 }
 
-@media (max-width: 480px) {
-  body {
-    background-color: black !important;
-  }
+input:disabled {
+  background: #C6CECE;
+}
+
+input:enabled {
+  background: #DEB4CB;
+}
+
+
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
 }
 
 h1 {
@@ -366,4 +371,78 @@ nav>ul {
 
 p.font2 {
   font-family: myImportedFont;
+}
+
+.column_public {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+
+  -webkit-column-gap: 80px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 80px; /* Firefox */
+  column-gap: 80px;
+
+  -webkit-column-rule: 4px outset #ff00ff; /* Chrome, Safari, Opera */
+  -moz-column-rule: 4px outset #ff00ff; /* Firefox */
+  column-rule: 4px outset #ff00ff;
+}
+
+.column_media h1 {
+  -webkit-column-span:all;
+  -moz-column-span:all;
+  column-span:all;
+}
+
+.column_media {
+   width: 100%;
+   max-width: 600px;
+}
+
+@media (min-width: 400px) {
+  .column_media {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    -webkit-column-rule: 1px solid #000;
+
+    -moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -moz-column-rule: 1px solid #000;
+
+    column-count: 2;
+    column-gap: 20px;
+    column-rule: 1px solid #000;
+  }
+}
+
+@media (min-width: 600px) {
+  .column_media {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+
+.flex_container {
+  display: flex;
+  background-color: #eee;
+}
+
+.flex_container > div {
+  transition: .5s;
+}
+
+
+.flex1:hover {
+  background-color: blue;
+  width: 190%;
+}
+
+.flex2:hover {
+  background-color: red;
+    width: 190%;
+}
+
+.flex3:hover {
+  background-color: yellow;
+    width: 190%;
 }
