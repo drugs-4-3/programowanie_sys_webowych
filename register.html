@@ -7,6 +7,9 @@
   <meta name="author" content="Michał Ściubidło, Piotr Neumann">
   <title>Rejestracja</title>
   <link rel="stylesheet" href="style.css" type="text/css">
+  <script type="text/javascript" src="timer.js">
+
+  </script>
 
   <style>
     .register_form
@@ -17,12 +20,12 @@
     h2 {
       color: green;
     }
-    
+
   </style>
 
 </head>
 
-<body id="register">
+<body id="register" onload="timer();">
   <nav>
     <ul>
       <li class="home"><a href="index.html">Strona główna</a></li>
@@ -35,7 +38,7 @@
 
 
   <section>
-    <h2 style="font-size: 40px">Rejestracja</h2>
+    <h2 style="font-size: 40px" onload="write();">Rejestracja</h2>
 
     <form class="register_form" action="register.html" method="post" autocomplete="on">
 
@@ -93,6 +96,10 @@
       <input type="submit" name="register" value="Zarejestruj się!">
     </form>
   </section>
+
+  <div id="time">
+
+  </div>
 
 </body>
 </html>

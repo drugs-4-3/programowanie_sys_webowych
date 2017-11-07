@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>Dodatkowe informacje o użytkowniku:</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="my_functions.js"></script>
 
   </head>
 
 
-  <body id="additional_info">
+  <body id="additional_info" onload="timer(); myFunctionHello();">
     <nav>
       <ul>
         <li class="home"><a href="index.html">Strona główna</a></li>
@@ -19,35 +20,33 @@
       </ul>
     </nav>
 
-    <header>
-      <h1>Dodaj informacje o sobie!</h1>
-    </header>
+    <button type="button" class="buttons" onclick="myFunction();">Hello World</button>
 
-  <form class="" action="additional_info.html" method="post">
-    <input type="text" name="first_name" value="" placeholder="Imię"><br>
-    <label for="color">
-      <input type="color" id="color" value="">
-      Ulubiony kolor:
-    </label><br>
-    <label for="month">
-      <input type="month" id="month" value="">
-      Kiedy się urodziłeś?
-    </label><br>
-    <label for="range">
-      <input type="range" id="range" min="1" max="10" value="5">
-      Jak bardzo nas lubisz?
-    </label><br>
-    <label for="search">
-      <input type="search" id="search" value="" placeholder="Twoje miasto">
-      Podaj swoje miasto!
-    </label><br>
-    <label for="webpage">
-      <input type="url" id="webpage" value="" placeholder="Twoja strona internetowa">
-      Podaj swoją stronę internetową!
-    </label><br>
-    <br>
-    <input type="submit" id="submit" value="Dodaj!">
-  </form>
+    <button type="button" class="buttons" onclick="myFunctionPrompt();">Prompt</button>
+
+    <button type="button" class="buttons" onclick="myFunctionAlert();">Alert</button>
+
+    <button type="button" class="buttons" onclick="myFunctionListener();">Listener</button>
+
+    <button type="button" id="btn" class="buttons">buttonListener</button>
+
+    <div id="time"></div>
+    <div id="miesiac"></div>
+    <div id="hello"></div>
+    <div id="zakres">
+      <div id="buttons">
+        <form class="zakres_wartosci">
+          <input type="button" value="Wypełnij" class="buttons" onclick="myFunctionRandom();">
+          <input type="text" value="" id="pole1">
+          <input type="text" value="" id="pole2">
+          <input type="button" value="Sprawdz" class="buttons" onclick="myFunctionZakres();">
+        </form>
+        <div id="wynik">Wynik: </div>
+        <div id="parseI">sd</div>
+        <div id="parseF">sd</div>
+      </div>
+    </div>
+
 
   </body>
 </html>

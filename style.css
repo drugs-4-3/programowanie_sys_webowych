@@ -77,13 +77,14 @@ body#index {
 
 body#register {
   background-image: url("img/kotek.jpg");
+  background-color: white;
   background-position: center;
   background-repeat: no-repeat;
 
 }
 
 body#additional_info {
-  background: url("img/kotek.jpg") center no-repeat;
+  background-color: white;
 }
 
 body#blog {
@@ -282,14 +283,11 @@ a:active {
   background-color: yellow;
 }
 
-input:disabled {
-  background: #C6CECE;
-}
 
-input:enabled {
-  background: #DEB4CB;
+input {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
 
 @media screen and (min-width: 480px) {
     body {
@@ -445,4 +443,29 @@ p.font2 {
 .flex3:hover {
   background-color: yellow;
     width: 190%;
+}
+
+.buttons {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #90EE90;
+}
+
+.buttons:hover {
+    background-color: #2E8B57;
+}
+
+#wynik {
+  width: 300px;
+  background-color: #90EE90;
+}
+#parseI {
+  width: 300px;
+  background-color: yellow;
+}
+#parseF {
+  width: 300px;
+  background-color: yellow;
 }
