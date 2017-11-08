@@ -1,3 +1,5 @@
+"use strict";
+
 var Wynik = "Wynik: ";
 
 function timer() {
@@ -14,54 +16,42 @@ function timer() {
 
   document.getElementById("time").innerHTML = date;
   switch(miesiac) {
-    case 1 :{
+    case 1 :
         document.getElementById("miesiac").innerHTML = "styczen";
         break;
-    }
-    case 2 :{
+    case 2 :
         document.getElementById("miesiac").innerHTML = "luty";
         break;
-    }
-    case 3 :{
+    case 3 :
         document.getElementById("miesiac").innerHTML = "marzec";
         break;
-    }
-    case 4 :{
+    case 4 :
         document.getElementById("miesiac").innerHTML = "kwiecien";
         break;
-    }
-    case 5 :{
+    case 5 :
         document.getElementById("miesiac").innerHTML = "maj";
         break;
-    }
-    case 6 :{
+    case 6 :
         document.getElementById("miesiac").innerHTML = "czerwiec";
         break;
-    }
-    case 7 :{
+    case 7 :
         document.getElementById("miesiac").innerHTML = "lipiec";
         break;
-    }
-    case 8 :{
+    case 8 :
         document.getElementById("miesiac").innerHTML = "sierpien";
         break;
-    }
-    case 9 :{
+    case 9 :
         document.getElementById("miesiac").innerHTML = "wrzesien";
         break;
-    }
-    case 10: {
+    case 10:
         document.getElementById("miesiac").innerHTML = "październik";
         break;
-    }
-    case 11: {
+    case 11:
         document.getElementById("miesiac").innerHTML = "listopad";
         break;
-    }
-    case 12: {
+    case 12:
         document.getElementById("miesiac").innerHTML = "grudzień";
         break;
-    }
   }
 
   setTimeout("timer()",1000);
@@ -85,7 +75,7 @@ function myFunctionListener() {
 
 function myFunctionHello() {
   document.getElementById("btn").addEventListener("click", function(){
-    document.getElementById("hello").innerHTML = "Witam!!"
+    document.getElementById("hello").innerHTML = "Witam!!";
   });
 }
 
@@ -94,11 +84,11 @@ function myFunctionZakres() {
   var liczba2 = document.getElementById("pole2").value;
   var wynik = "";
   if (liczba1<liczba2) {
-    for(i=liczba1;i<=liczba2;i++) {
+    for(var i=liczba1;i<=liczba2;i++) {
       wynik = wynik + i + " ";
     }
   } else if (liczba2<liczba1) {
-      for(i=liczba2;i<=liczba1;i++) {
+      for(var i=liczba2;i<=liczba1;i++) {
         wynik = wynik + i + " ";
       }
   } else {
