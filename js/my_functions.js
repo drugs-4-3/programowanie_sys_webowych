@@ -12,6 +12,12 @@ function timer() {
   var minuta = today.getMinutes();
   var sekunda = today.getSeconds();
 
+  var zmienna;
+
+  if(zmienna == null) {
+    
+  }
+
   var date = dzien + " " + miesiac + " " + rok + " | " + godzina+ ":"+ minuta+ " " + sekunda;
 
   document.getElementById("time").innerHTML = date;
