@@ -80,15 +80,15 @@ function myFunctionHello() {
 }
 
 function myFunctionZakres() {
-  var liczba1 = document.getElementById("pole1").value;
-  var liczba2 = document.getElementById("pole2").value;
+  var liczba1 = parseInt(document.getElementById("pole1").value);
+  var liczba2 = parseInt(document.getElementById("pole2").value);
   var wynik = "";
   if (liczba1<liczba2) {
-    for(var i=liczba1;i<=liczba2;i++) {
+    for (let i=liczba1;i<=liczba2;i++) {
       wynik = wynik + i + " ";
     }
   } else if (liczba2<liczba1) {
-      for(var i=liczba2;i<=liczba1;i++) {
+      for (let i=liczba2;i<=liczba1;i++) {
         wynik = wynik + i + " ";
       }
   } else {
