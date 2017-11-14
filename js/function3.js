@@ -5,5 +5,13 @@ function chColor() {
   console.log(color);
   document.body.style.backgroundColor = color;
   document.body.style.color = "red";
-  document.body.style.fontFamily = "Impact,Charcoal,sans-serif";
+
+}
+
+function chFont(selectTag) {
+
+  var listValue = selectTag.options[selectTag.selectedIndex].text;
+  document.body.style.fontFamily = listValue;
+
+
 }

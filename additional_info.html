@@ -68,7 +68,16 @@
       <form>
         <input type="color" name="favcolor" value="#ff0000" id="colorValue">
       </form>
-      <button type="button" class="buttons" onclick="chColor();">Zmien kolor</button>
+      <select id="selectFont" onchange="chFont(this);">
+        <option>Georgia</option>
+        <option>Palatino Linotype</option>
+        <option>Book Antiqua</option>
+        <option>Times New Roman</option>
+        <option>Arial</option>
+        <option>Helvetica</option>
+        <option>Arial Black</option>
+      </select>
     </div>
+    <button type="button" class="buttons" onclick="chColor();">Zmien kolor</button>
   </body>
 </html>
