@@ -23,12 +23,14 @@ function func5(event) {
 }
 
 function func51(event) {
-  // var bo = confirm("na pewno reset?");
-  // // var form = document.getElementById("super-formularz");
-  // // if (bo) {
-  // //   console.log(form);
-  // //   form.reset();
-  // // }
   return confirm("na pewno resetować?")
+}
 
+function onfocus1() {
+  document.getElementById('focusme').focus();
+  console.log('asd');
+}
+
+function onfocusout1() {
+  document.getElementById('focusme').blur();
 }
