@@ -12,8 +12,23 @@ function func4(event) {
 function func41(event) {
   var x = document.getElementById("pudelko2");
   var y = document.getElementById("pudelko3");
-  x.innerHTML = "clientx: " + event.clientX + " clienty: " + event.screenY;
-  x.innerHTML = "clientx: " + event.clientX + " clienty: " + event.screenY;
+  x.innerHTML = "screenx: " + event.screenX + " screeny: " + event.screenY;
+  x.innerHTML = "screenx: " + event.screenX + " screeny: " + event.screenY;
   y.innerHTML = "clientx: " + event.clientX + " clienty: " + event.clientY;
-  y.innerHTML = "clientx: " + event.clientX + " client: " + event.clientY;
+  y.innerHTML = "clientx: " + event.clientX + " clienty: " + event.clientY;
+}
+
+function func5(event) {
+  return confirm("na pewno?")
+}
+
+function func51(event) {
+  // var bo = confirm("na pewno reset?");
+  // // var form = document.getElementById("super-formularz");
+  // // if (bo) {
+  // //   console.log(form);
+  // //   form.reset();
+  // // }
+  return confirm("na pewno resetować?")
+
 }
