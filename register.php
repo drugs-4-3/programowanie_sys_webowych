@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -154,3 +155,11 @@ echo '<br>';
 reset($arr);
 echo current($arr);
 echo '<br>';
+=======
+<?php
+
+$data = $_POST[name]
+
+echo $data;
+echo 'asdasd';
+>>>>>>> e77b8a8eb2ce70b3b364733b856546000460b4fb
