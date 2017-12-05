@@ -21,12 +21,16 @@
       <li class="menuFont"><a href="menu.html">Menu Font</a></li>
     </ul>
   </nav>
+
+
+
+
   <div class="rounded">
     <h1>Witaj na stronie Śmieszne Kotki</h1>
   </div>
   <h4><em>&quot;Świat pełen jest zła, zimna i bólu. Na szczęście są śmieszne kotki&quot;</em> ~ nieznany pisarz</h4>
   <div class="mydiv">
-    
+
   </div>
   <hr>
   <article>
