@@ -40,43 +40,17 @@
   <section>
     <h2 style="font-size: 40px" onload="write();">Rejestracja</h2>
 
-    <form class="register_form" action="register.html" method="post" autocomplete="on">
+    <form class="register_form" action="register.php" method="post" autocomplete="on">
 
-      <label for="Imie">Imie</label><br>
-      <input type="text" id="Imie" value="" autofocus> Text
+      <label for="first_name">Imie</label><br>
+      <input type="text" id="first_name" name="first_name" value="" autofocus>
+      <br>
+      <label for="number">Numerek</label><br>
+      <input type="number" name="number" id="number" value="" autofocus>
       <br>
 
-      <label for="nazwisko">Nazwisko</label><br>
-      <input type="text" id="nazwisko" value="" required> Text
-      <br>
-
-      <label for="month">Miesiąc</label> <br>
-      <input name=month id="month" list=months> Datalist
-      <datalist id=months>
-        <select name=month>
-          <option value="styczeń">styczeń</option>
-          <option value="luty">luty</option>
-          <option value="marzec">marzec</option>
-          <option value="kwiecień">kwiecień</option>
-          <option value="maj">maj</option>
-          <option value="czerwiec">czerwiec</option>
-          <option value="lipiec">lipiec</option>
-          <option value="sierpień">sierpień</option>
-          <option value="wrzesień">wrzesień</option>
-          <option value="październik">październik</option>
-          <option value="listopad">listopad</option>
-          <option value="grudzień">grudzień</option>
-        </select>
-      </datalist>
-      <br>
-      <label for="login">Login</label><br>
-      <input type="text" id="login" value="" autocomplete="on">
-      <br>
-
-      <label for="password">Hasło</label> <br>
-      <input type="password" id="password" value="">
-      <br>
-
+<<<<<<< HEAD
+=======
       <label for="password_repeat">Powtórz hasło</label><br>
       <input type="password" id="password_repeat" value="">
       <br>
@@ -86,14 +60,14 @@
       <br>
 
       <label for="tel">Telefon</label> <br>
-      <input type="text" id="tel" pattern='0048+[0-9]{3} [0-9]{3} [0-9]{3}' title='+48### ### ###'> ### ### ###
+      <input type="text" id="tel" title='+48### ### ###'> ### ### ###
 
       <br><br>
 
       <input type="checkbox" id="rules" value="">
       <label for="rules">Zgadzam się z regulaminem</label>
       <br> <br>
-
+>>>>>>> e77b8a8eb2ce70b3b364733b856546000460b4fb
       <input type="submit" name="register" value="Zarejestruj się!">
     </form>
   </section>
