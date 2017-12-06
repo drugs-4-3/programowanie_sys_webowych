@@ -4,9 +4,7 @@ function addImage() {
   image.setAttribute("width", "200");
   image.setAttribute("height", "200");
   image.setAttribute("alt", "kot_chleb");
-  for(var i = 0; i<20;i++){
-    console.log(i +" chuj");
-  }
+
   var number = document.images.length;
     document.getElementById("numberImg").innerHTML = "Liczba zdjec: " + number;
 

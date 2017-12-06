@@ -19,6 +19,7 @@
       <li class="blog"><a href="blog.html">Blog</a></li>
       <li class="więcej o sobie"><a href="additional_info.html">Więcej o sobie</a></li>
       <li class="menuFont"><a href="menu.html">Menu Font</a></li>
+      <li class="menuFont"><a href="login.php">Zaloguj</a></li>
     </ul>
   </nav>
 
