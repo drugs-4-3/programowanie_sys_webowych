@@ -1,0 +1,33 @@
+#login_container {
+  background-color: blue;
+  width: 300px;
+  padding: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: 3px 3px 30px 5px rgba(204, 204, 204, 0.9);
+  -moz-box-shadow: 3px 3px 30px 5px rgba(204, 204, 204, 0.9);
+  box-shadow: 3px 3px 30px 5px rgba(204, 204, 204, 0.9);
+}
+.field_log {
+  width: 300px;
+  background-color: #DC143C;
+  color: #666;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#button_submit {
+  width: 250px;
+  background-color: #FFA07A;
+  font-size: 20px;
+  color: white;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  clear: both;
+}

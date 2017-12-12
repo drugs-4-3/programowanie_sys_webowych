@@ -1,3 +1,8 @@
+<?php
+  session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -14,12 +19,17 @@
 <body id="index">
   <nav>
     <ul>
-      <li class="home"><a class="active" href="index.html">Strona główna</a></li>
-      <li class="register"><a href="register.html">Rejestracja</a></li>
+      <li class="home"><a class="active" href="index.php">Strona główna</a></li>
+      <li class="register"><a href="register.php">Rejestracja</a></li>
       <li class="blog"><a href="blog.html">Blog</a></li>
       <li class="więcej o sobie"><a href="additional_info.html">Więcej o sobie</a></li>
       <li class="menuFont"><a href="menu.html">Menu Font</a></li>
-      <li class="menuFont"><a href="login.php">Zaloguj</a></li>
+      <li class="loguj"><a href="login.php">Zaloguj</a></li>
+      <?php
+        if(isset($_SESSION['login']) && $_SESSION['login']==true) {
+          echo "<li class='loguj'><a href='account.php'>Konto</a></li>";
+        }
+       ?>
     </ul>
   </nav>
 
